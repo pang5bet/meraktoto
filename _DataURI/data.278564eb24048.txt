@@ -1,0 +1,1 @@
+chrome-extension://niaagjifaifoebkdkkndbhdoamicolmj/content/index.js?commonjs-entry

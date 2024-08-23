@@ -1,0 +1,1 @@
+chrome-extension://kchaponcodemjigejilffhfchecpgdpf/js/content_main.js

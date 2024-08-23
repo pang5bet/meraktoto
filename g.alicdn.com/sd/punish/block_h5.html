@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script charset="utf-8" src="https://g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js" crossorigin></script>
+    <script src="//g.alicdn.com/code/lib/qrcodejs/1.0.0/qrcode.min.js" crossorigin></script>
+    <link rel="stylesheet" href="https://g.alicdn.com/bsop-static/sufei-punish/0.1.40/build/main.css">
+    <style>
+        body .pc-ajax .bx-pu-qrcode-wrap {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <punish-component />
+    <script>
+        window._config_ = {
+            "renderTo": "#nocaptcha",
+            "customImage": "",
+            "NCTOKENSTR": "###NCTOKENSTR###",
+            "action": "block",
+            "HOST": "###HOST###",
+            "PATH": "###PATH###",
+            "FORMACTIOIN": "/_____tmd_____/verify/",
+            "BXSTEP": "###BXSTEP###",
+            "SECDATA": "###SECDATA###",
+            "NCAPPKEY": "###NCAPPKEY###",
+            "isUpgrade": "###PUNISH_UPGRADE###",
+        }
+        window._custom_config_ = {
+            "languageConfig": {
+                "captcha-title": "访问被拒绝",
+                "deny-h5-tips": "<span style='color:red'>亲，访问被拒绝</span><p style='color:red'>请检查是否使用了代理软件或 vpn 哦~</p>",
+                "feedback-link": "点我反馈 >",
+            }
+        }
+    </script>
+</body>
+<script charset="utf-8" src="//g.alicdn.com/bsop-static/sufei-punish/0.1.40/build/punishpage.min.js" crossorigin></script>
+<script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/dt/tracker/4.0.0/??tracker.Tracker.js,tracker.interfaceTrackerPlugin.js,tracker.performanceTrackerPlugin.js" crossorigin></script>
+
+<script type="text/javascript">
+    var tracker = new window.Tracker({
+        pid: 'Sufei',
+        plugins: [
+            [window.interfaceTrackerPlugin],
+            [window.performanceTrackerPlugin, {
+                sampleRate: 1
+            }]
+        ]
+    });
+    tracker.install();
+    tracker.log({
+        code: 16, // 系统自动生成，请勿修改
+        msg: 'block_h5 访问', // 异常信息，推荐传入
+        sampleRate: 1.00, // 目前采样率为 100.00%
+    });
+</script>
+
+</html>

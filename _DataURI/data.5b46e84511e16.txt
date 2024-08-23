@@ -1,0 +1,1 @@
+chrome-extension://kcabmhnajflfolhelachlflngdbfhboe/data/inject/main.js

@@ -1,0 +1,1 @@
+chrome-extension://kchaponcodemjigejilffhfchecpgdpf/css/content_autoimprover.css
